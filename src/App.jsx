@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Tabs from './components/Tabs'
-import Todolist from './components/Todolist'
-import Todoinput from './components/Todoinput'
+import TodoList from './components/TodoList'
+import TodoInput from './components/TodoInput'
 
 const App = () => {
 /*const todos=[
@@ -52,8 +52,8 @@ const App = () => {
     <>
     <Header todos={todos}/>
     <Tabs todos={todos} selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>
-    <Todolist todos={todos} selectedTab={selectedTab} deleteTodo={deleteTodo} completeTodo={completeTodo}/>
-    <Todoinput handleNewTodo={handleNewTodo}/>
+    <TodoList todos={todos} selectedTab={selectedTab} deleteTodo={deleteTodo} completeTodo={completeTodo}/>
+    <TodoInput handleNewTodo={handleNewTodo}/>
     
     </>
   )

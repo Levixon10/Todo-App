@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-const Todoinput = (props) => {
+const TodoInput = (props) => {
   const {handleNewTodo}=props
   const [inputValue, setInputValue]=useState('')
   console.log(inputValue)
@@ -17,4 +17,4 @@ const Todoinput = (props) => {
   )
 }
 
-export default Todoinput
+export default TodoInput

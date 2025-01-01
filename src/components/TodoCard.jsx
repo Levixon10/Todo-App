@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Todocard = (props) => {
+const TodoCard = (props) => {
     const {todo, deleteTodo ,todoindex, completeTodo}=props
     
   return (
@@ -22,4 +22,4 @@ const Todocard = (props) => {
   )
 }
 
-export default Todocard
+export default TodoCard

@@ -1,7 +1,7 @@
 import React from 'react'
-import Todocard from './Todocard'
+import TodoCard from './TodoCard'
 
-const Todolist = (props) => {
+const TodoList = (props) => {
     const {todos ,selectedTab}=props
     const filterTodoList= selectedTab=='All' ? 
     todos :
@@ -10,7 +10,7 @@ const Todolist = (props) => {
     <>
     {filterTodoList.map((todo,todoindex)=>{
     return(
-        <Todocard {...props} key={todoindex} todoindex={todos.findIndex(val => val.input == todo.input)}
+        <TodoCard {...props} key={todoindex} todoindex={todos.findIndex(val => val.input == todo.input)}
         todo={todo}/>
     )
 })}
@@ -20,4 +20,4 @@ const Todolist = (props) => {
   )
 }
 
-export default Todolist
+export default TodoList
